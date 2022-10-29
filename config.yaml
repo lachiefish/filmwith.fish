@@ -1,0 +1,72 @@
+baseURL: https://filmwith.fish # todo: change site url.
+title: filmwith.fish # todo: change site name.
+defaultContentLanguage: 'en'
+theme: eternity
+googleAnalytics: 'G-0CQNKKMYE4' # todo: set your analytics id.
+
+params:
+  image: /images/banner.png
+  subtitle: Welcome # todo: change default subtitle for your website.
+  copyright: All rights reserved. # todo: set your copyright type.
+  author: Lachlan Fisher # todo: set your full name.
+  dontShowSource: false # please, do not do this :)
+  portfolio:
+    columns:
+      desktop:
+        nature: 4
+        archive: 6
+        people: 2
+        default: 3
+      mobile:
+        default: 2
+        archive: 3
+        people: 1
+  socials:
+    # todo: change these links.
+    - icon: 'far fa-envelope fa-lg'
+      url: 'mailto:contact@filmwith.fish'
+      landing: true
+    - icon: 'fab fa-github fa-lg'
+      url: 'https://github.com/lachiefish/filmwith.fish'
+      landing: true
+    - icon: 'fab fa-instagram fa-lg'
+      url: 'https://instagram.filmwith.fish'
+    - icon: 'fab fa-linkedin-in fa-lg'
+      url: 'https://linkedin.filmwith.fish'
+  homepage: "/work" # homepage link, mostly same with menu.main[0]
+  specialPages:
+    - work
+    - archive
+  bypassWelcomePage: false # redirects "/" to "homepage" when it's true.
+  plausible: 'filmwith.fish'
+  disableRadius: false
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: tags
+
+permalinks:
+  work: ":filename/"
+
+menu:
+  main:
+    - name: work
+      url: /work/
+      weight: 1
+    - name: people
+      url: /tags/people/
+      weight: 2
+    - name: nature
+      url: /tags/nature/
+      weight: 3
+    - name: archive
+      url: /tags/archive/
+      weight: 4
+    - name: about
+      url: /about/
+      weight: 5

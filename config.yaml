@@ -27,12 +27,12 @@ params:
       url: 'mailto:contact@filmwith.fish'
       landing: true
     - icon: 'fab fa-github fa-lg'
-      url: 'https://github.com/lachiefish/filmwith.fish'
+      url: 'https://github.com/lachiefish'
       landing: true
     - icon: 'fab fa-instagram fa-lg'
-      url: 'https://instagram.filmwith.fish'
+      url: 'https://www.instagram.com/lachiefisher/'
     - icon: 'fab fa-linkedin-in fa-lg'
-      url: 'https://linkedin.filmwith.fish'
+      url: 'https://www.linkedin.com/in/lachlanfisher/'
   homepage: "/work" # homepage link, mostly same with menu.main[0]
   specialPages:
     - work
